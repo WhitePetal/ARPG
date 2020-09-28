@@ -1,0 +1,28 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3806595927	BGMEvent			\Default Work Unit\BGMEvent	
+	4190725699	UIAuidoEvent			\Default Work Unit\UIAuidoEvent	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	927786189	BGMSwitch			\Default Work Unit\BGMSwitch	
+	1198474679	UIAudioSwitch			\Default Work Unit\UIAudioSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	73015004	Login	BGMSwitch			
+	279612371	MainCity	BGMSwitch			
+	2330559301	bgHuangYe	BGMSwitch			
+	4248742144	Nothing	BGMSwitch			
+	791896191	uiExtenBtn	UIAudioSwitch			
+	1416673703	uiClickBtn	UIAudioSwitch			
+	1946830578	uiLoginBtn	UIAudioSwitch			
+	4070012478	uiOpenPage	UIAudioSwitch			
+	4152428500	FBItem	UIAudioSwitch			
+	4248742144	Nothing	UIAudioSwitch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	160613602	uiOpenPage	F:\Unity\ARPG\ARPG_WwiseProject\.cache\Mac\SFX\uiOpenPage_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UIAudio\uiOpenPage		55360
+	464505325	uiClickBtn	F:\Unity\ARPG\ARPG_WwiseProject\.cache\Mac\SFX\uiClickBtn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UIAudio\uiClickBtn		16192
+	752351914	LoginBG	F:\Unity\ARPG\ARPG_WwiseProject\.cache\Mac\SFX\LoginBG_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM\LoginBG		2642752
+	769570554	uiExtenBtn	F:\Unity\ARPG\ARPG_WwiseProject\.cache\Mac\SFX\uiExtenBtn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UIAudio\uiExtenBtn		48448
+	820098363	uiLoginBtn	F:\Unity\ARPG\ARPG_WwiseProject\.cache\Mac\SFX\uiLoginBtn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UIAudio\uiLoginBtn		138304
+	959247447	MainCityBG	F:\Unity\ARPG\ARPG_WwiseProject\.cache\Mac\SFX\bgMainCity_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM\MainCityBG		3177280
+

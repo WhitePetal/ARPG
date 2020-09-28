@@ -1,0 +1,39 @@
+local IEnumator = {
+    func = nil,
+    co = nil,
+    Current = nil
+}
+
+local move_end = {}
+
+
+function IEnumator:new(func, ...)
+    local o = {}
+    self.__index = self
+    setmetatable(o, self)
+    local params = {...}
+    o.func = function ()
+        func(table.unpack(params))
+        return move_end
+    end
+    o.co = coroutine.create(o.func)
+    return o
+end
+
+function IEnumator:MoveNext()
+    local code
+    code, self.Current = coroutine.resume(self.co)
+    if self.Current == move_end then
+        self.Current = nil
+        return false
+    else
+        return true
+    end
+end
+
+function IEnumator:Reset()
+    self.co = coroutine.create(self.func)
+end
+
+
+return IEnumator

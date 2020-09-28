@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4906213d2f2e9f4a8cff4d692cb0fd1, type: 3}
+  m_Name: 65B8F52F-28CF-455E-B1DE-4C0C83A0627D
+  m_EditorClassIdentifier: 
+  objectName: BGMEvent
+  id: 3806595927
+  guid: 65B8F52F-28CF-455E-B1DE-4C0C83A0627D

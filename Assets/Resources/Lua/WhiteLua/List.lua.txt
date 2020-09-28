@@ -1,0 +1,137 @@
+local Cls = require("WhiteLua.Class")
+local List = Cls.create()
+
+function List:create(typeStr)
+    local private = {
+        ar = {}
+    }
+    local o = {
+        listType = typeStr,
+        count = 0
+    }
+
+    local function iter(lst ,i)
+        i = i + 1
+        local v = private.ar[i]
+        if v then
+            return i, v
+        end
+    end
+    List.__pairs = function (lst)
+        return iter, lst, 0
+    end
+    
+    function List:Add(value)
+        if type(value) ~= self.listType then
+            error("添加类型不符合该列表类型")
+            return
+        end
+    
+        table.insert(private.ar, value)
+        self.count = self.count + 1
+    end
+    
+    function List:Insert(value, index)
+        if type(value) ~= self.listType then
+            error("添加类型不符合该列表类型")
+            return
+        end
+    
+        if index > self.count + 1 then
+            error("插入元素过界")
+            return
+        end
+    
+        table.insert(private.ar, index, value)
+        self.count = self.count + 1
+    end
+    
+    function List:RemoveAt(index)
+        table.remove(private.ar, index)
+        self.count = self.count - 1
+    end
+    
+    function List:Remove()
+        table.remove(private.ar)
+        self.count = self.count - 1
+    end
+    
+    
+    local function QuickSort(ar, start, final, compar)
+        if start >= final then
+            return
+        end
+        local l = start
+        local r = final
+        local index = r
+        local cur = ar[index]
+    
+        while l < r do
+            while not compar(ar[r], cur) and l < r do
+                r = r - 1
+            end
+            ar[l], ar[r] = ar[r], ar[l]
+    
+            while not compar(ar[l], cur) and l < r do
+                l = l + 1
+            end
+            ar[l], ar[r] = ar[r], ar[l]
+        end
+        
+        if ar[l] > cur then
+            ar[l], ar[index] = ar[index], ar[l]
+        else
+            ar[l + 1], ar[index] = ar[index], ar[l + 1]
+        end
+        QuickSort(ar, l, index - 1)
+        QuickSort(ar, index + 1, r)
+    end
+    local function Heaf(ar, index, len, compar)
+        local l = index * 2 + 1
+        local r = index * 2 + 2
+        local largest = index
+    
+        if l <= len and (not compar(l, largest)) then
+            largest = l
+        end
+        if r <= len and (not compar(r, largest)) then
+            largest = r
+        end
+    
+        if largest ~= index then
+            ar[largest], ar[index] = ar[index], ar[largest]
+            Heaf(ar, largest, len)
+        end
+    end
+    local function BuildHeaf(ar, len, compar)
+        for i = len // 2, 1, -1 do
+            Heaf(ar, i, len, compar)
+        end
+    end
+    local function HeafSort(ar, len, compar)
+        -- 建堆
+        BuildHeaf(ar, len, compar)
+        -- 将堆底元素与堆顶元素交换, 并重构堆
+        for i = len, 1, -1 do
+            ar[1], ar[len] = ar[len], ar[1]
+            len = len - 1
+            Heaf(ar, 0, len, compar)
+        end
+    end
+    function List:Sort(compar)
+        if compar == nil then
+            compar = function (a, b) return a <= b end
+        end
+    
+        if self.count < 10000 then
+            QuickSort(private.ar, 1, self.count, compar)
+        else
+            HeafSort(private.ar, self.count, compar)
+        end 
+    end
+
+    return List:new(o)
+end
+
+
+return List

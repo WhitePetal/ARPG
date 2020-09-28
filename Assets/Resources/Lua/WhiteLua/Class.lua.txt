@@ -1,0 +1,14 @@
+local Obj = require("WhiteLua/Object")
+local Class = {}
+Class.create = function (parent)
+    parent = parent or Obj
+    local s = {}
+    setmetatable(s, {__index = function (t, k)
+        t[k] = parent[k]
+        return parent[k]
+    end})
+    
+    return s
+end
+
+return Class

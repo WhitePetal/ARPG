@@ -1,0 +1,22 @@
+local ue = CS.UnityEngine
+local util = require('xlua.util')
+
+function start()
+	local cor = util.cs_generator(function (secound)
+		for i = 1, 10, 1 do
+			coroutine.yield(ue.WaitForSeconds(secound))
+			print('1s')
+		end
+	end, 1)
+
+	local co = CS.XLua.Cast.IEnumerator(cor)
+	self:StartCoroutine(co)
+end
+
+function update()
+	
+end
+
+function ondestroy()
+    
+end

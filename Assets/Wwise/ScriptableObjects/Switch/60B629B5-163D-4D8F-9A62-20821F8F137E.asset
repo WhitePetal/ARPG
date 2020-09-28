@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fff8abd62a44a0418b2042c2859ddc9, type: 3}
+  m_Name: 60B629B5-163D-4D8F-9A62-20821F8F137E
+  m_EditorClassIdentifier: 
+  objectName: FBItem
+  id: 4152428500
+  guid: 60B629B5-163D-4D8F-9A62-20821F8F137E
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 4c71c00db8664d84895b3f6fab5ac6eb, type: 2}

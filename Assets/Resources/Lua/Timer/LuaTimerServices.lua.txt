@@ -1,0 +1,101 @@
+local TimerServices = {
+    deltaTime = 0
+}
+local ue = CS.UnityEngine
+local BJtimer = CS.BJTimer
+local btimer = nil
+local start = false
+
+local log_switch = {
+    [BJtimer.BTimer.LogLevel.Info] = function (str) ue.Debug.Log(str) end,
+    [BJtimer.BTimer.LogLevel.Log] = function (str) ue.Debug.Log(str) end,
+    [BJtimer.Btimer.LogLevel.Warning] = function (str) ue.Debug.Log(str) end,
+    [BJtimer.Btimer.LogLevel.Error] = function (str) ue.Debug.Log(str) end
+}
+function TimerServices.Init()
+    if btimer ~= nil then
+        return
+    end
+    btimer = BJtimer.BTimer()
+    btimer:SetLog(function (str, level)
+        log_switch[level]()
+    end)
+    local tm = ue.GameObject('TimerSevMono'):AddComponent(typeof(CS.LuaTimerSevMono))
+    -- tm.luaScriptStr = "require'Lua/Timer/LuaTimerSevMono'"
+end
+
+function TimerServices.Update()
+    if start then
+        btimer:Tick()
+    end
+end
+
+function TimerServices.StartTimer()
+    start = true
+end
+
+function TimerServices.StopTimer()
+    start = false
+end
+
+-- region Task
+function TimerServices.AddTimerTask(action, delay, count, unite)
+    count = count or 1
+    unite = unite or BJtimer.TimeUnit.Millisecound
+    return btimer:AddTimerTask(action, delay, count, unite)
+end
+
+function TimerServices.AddFrameTask(action, delay, count, unite)
+    count = count or 1
+    unite = unite or BJtimer.TimeUnit.Millisecound
+    return btimer:AddFrameTask(action, delay, count, unite)
+end
+
+function TimerServices.DeleteTimerTask(tid)
+    btimer:DeleteTimerTask(tid)
+end
+
+function TimerServices.DeleteFrameTask(tid)
+    btimer:DeleteFrameTask(tid)
+end
+
+function TimerServices.ReplaceTimerTask(tid, action, delay, count, unite)
+    count = count or 1
+    unite = unite or BJtimer.TimeUnit.Millisecound
+    return btimer:ReplaceTimerTask(tid, action, delay, count, unite)
+end
+
+function TimerServices.ReplaceFrameTask(tid, action, delay, count, unite)
+    count = count or 1
+    unite = unite or BJtimer.TimeUnit.Millisecound
+    return btimer:ReplaceFrameTask(tid, action, delay, count, unite)
+end
+-- endregion
+
+-- region Tool
+function TimerServices.NowMillisecondsTime()
+    return btimer:GetMillisecondsTime()
+end
+
+function TimerServices.GetLocalDateTime()
+    return btimer:GetLocalDateTime()
+end
+
+function TimerServices.GetYear()
+    return btimer:GetYear()
+end
+
+function TimerServices.GetMonth()
+    return btimer:GetMonth()
+end
+
+function TimerServices.GetWeek()
+    return btimer:GetWeek()
+end
+
+function TimerServices.GetDay()
+    return btimer:GetDay()
+end
+-- endregion
+
+return TimerServices

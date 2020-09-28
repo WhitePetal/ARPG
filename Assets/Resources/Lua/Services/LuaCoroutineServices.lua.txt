@@ -1,0 +1,11 @@
+local Instance = {
+
+}
+
+
+function Instance:StartCoroutine(cor)
+    self:StartCoroutine(cor)
+end
+
+
+return Instance

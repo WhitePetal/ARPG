@@ -1,0 +1,14 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	927786189	BGMSwitch			\Default Work Unit\BGMSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	73015004	Login	BGMSwitch			
+	4248742144	Nothing	BGMSwitch			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

@@ -1,0 +1,12 @@
+
+local LodingWindow = {}
+
+function awake()
+    
+end
+
+function LodingWindow:SetWindowState(isActive)
+    self.transform.gameObject:SetActive(isActive)
+end
+
+return LodingWindow

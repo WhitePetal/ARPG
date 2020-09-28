@@ -1,0 +1,28 @@
+local ResoucesService = {}
+local ue = CS.UnityEngine
+local gameRoot = nil;
+
+local cahceDic = {}
+
+function ResoucesService.Init(gr)
+    gameRoot = gr
+end
+
+function ResoucesService.LoadSceneAsync(sceneName, loadedCB)
+    print(gameRoot.loadingWindow)
+    gameRoot.loadingWindow:SetWindowState(true)
+end
+
+function ResoucesService.LoadResource(path, cache)
+    return ue.Resources.Load(path)
+end
+
+function ResoucesService.LoadResourceAsync(path, cache)
+    
+end
+
+function ResoucesService.LoadGameObject(path, cache, position, rotation, parent)
+    
+end
+
+return ResoucesService;

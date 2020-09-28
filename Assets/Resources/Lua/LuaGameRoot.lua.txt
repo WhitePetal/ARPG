@@ -1,0 +1,44 @@
+local ue = CS.UnityEngine
+local IEnumator = require('Lua/WhiteLua/IEnumator')
+local util = require('xlua.util')
+local ComponentMgr = nil
+
+local GameRoot = {
+	loadingWindow = nil,
+	dynamicWidnow = nil
+}
+
+
+
+function awake()
+
+end
+
+function start()
+	print("Lua Game Root Start!!")
+	ComponentMgr = require('Lua/LuaComponentMgr')
+	print(ComponentMgr)
+	print(ComponentMgr['DynamicWindow'])
+	-- GameRoot.dynamicWidnow = self.transform:Find('Canvas/DynamicWindow'):GetComponent(typeof(CS.LuaDynamicWindow))
+	-- cast(GameRoot.dynamicWidnow, typeof(CS.LuaDynamicWindow))
+
+	-- GameRoot.loadingWindow = self.transform:Find('Canvas/LodingWindow'):GetComponent(typeof(CS.LuaLodingWindow))
+	-- cast(GameRoot.loadingWindow, typeof(CS.LuaDynamicWindow))
+	-- print(GameRoot.loadingWindow.table)
+
+
+	-- local timeSev = require('Lua/Timer/LuaTimerServices')
+	-- timeSev.Init()
+	-- timeSev.StartTimer()
+
+	-- local resSev = require('Lua/Services/LuaResourceService')
+	-- resSev.Init(GameRoot)
+
+	-- resSev.LoadSceneAsync()
+end
+
+function ondestroy()
+
+end
+
+return GameRoot

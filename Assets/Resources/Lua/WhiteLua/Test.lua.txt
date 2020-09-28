@@ -1,0 +1,11 @@
+local cor = coroutine.create(function (num)
+    coroutine.yield(num)
+    num = num + 1
+    coroutine.yield(num)
+    print(num)
+    coroutine.yield(num)
+end)
+
+function stepCor(arg1, arg2, arg3)
+    coroutine.resume(cor, 10)
+end

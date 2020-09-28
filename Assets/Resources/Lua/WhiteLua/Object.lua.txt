@@ -1,0 +1,14 @@
+local Object = {}
+
+function Object:new(o)
+    o = o or {}
+    self.__index = self
+    setmetatable(o, self)
+    return o
+end
+
+function Object:ToString()
+    return "未实现"
+end
+
+return Object

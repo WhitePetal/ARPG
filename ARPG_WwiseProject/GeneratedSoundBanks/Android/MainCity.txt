@@ -1,0 +1,14 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1198474679	UIAudioSwitch			\Default Work Unit\UIAudioSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	791896191	uiExtenBtn	UIAudioSwitch			
+	1416673703	uiClickBtn	UIAudioSwitch			
+	1946830578	uiLoginBtn	UIAudioSwitch			
+	4070012478	uiOpenPage	UIAudioSwitch			
+	4152428500	FBItem	UIAudioSwitch			
+	4248742144	Nothing	UIAudioSwitch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	534778113	FBItem	F:\Unity\ARPG\ARPG_WwiseProject\.cache\Android\SFX\fbitem_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UIAudio\FBItem		170560
+

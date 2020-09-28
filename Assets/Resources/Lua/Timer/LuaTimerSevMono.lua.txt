@@ -1,0 +1,20 @@
+local ue = CS.UnityEngine
+local Instance = {
+    timeSev = nil
+}
+
+function awake()
+    ue.Object.DontDestroyOnLoad(self.gameObject)
+    
+end
+
+function start()
+    Instance.timeSev = require('Lua/Timer/LuaTimerServices')
+end
+
+function update()
+    Instance.timeSev.deltaTime = ue.Time.deltaTime
+    Instance.timeSev.Update()
+end
+
+return Instance

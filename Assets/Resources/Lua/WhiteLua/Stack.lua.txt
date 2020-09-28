@@ -1,0 +1,44 @@
+Stack = {
+    last = 0,
+    count = 0,
+    ar = {}
+}
+
+function Stack:new()
+    local o = {}
+    self.__index = self
+    setmetatable(o, self)
+    return o
+end
+
+function Stack:Push(value)
+    self.last = self.last + 1
+    self.ar[self.last] = value
+    self.count = self.count + 1
+end
+
+function Stack:Pop()
+    if self.count <= 0 then
+        error("栈已为空，无法出栈")
+        return
+    end
+
+    local value = self.ar[self.last]
+    table.remove(self.ar, self.last)
+    self.last = self.last - 1
+    self.count = self.count - 1
+    return value
+end
+
+function Stack:Peek()
+    if self.count <= 0 then
+        return nil
+    end
+
+    return self.ar[self.last]
+end
+
+
+
+
+return Stack

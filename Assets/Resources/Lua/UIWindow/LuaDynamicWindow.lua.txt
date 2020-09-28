@@ -1,0 +1,52 @@
+local ue = CS.UnityEngine
+local base = require('Lua/Common/LuaUIWindowBase')
+local Queue = require('Lua/WhiteLua/Queue')
+
+local DynamicWindow = {}
+
+local tipsAnim = nil
+local tipsText = nil
+local playerDodgeAnim = nil
+local hpItemRoot = nil
+
+local tipsQue = Queue:new() 
+
+local isTipsShowing = false
+
+function awake()
+    print(self)
+    tipsAnim = base.FindComponent(self, 'CenterPin/textTips', ue.Animation)
+    tipsText = base.FindComponent(self, 'CenterPin/textTips', ue.UI.Text)
+    playerDodgeAnim = base.FindComponent(self, 'CenterPin/imgPlayerDodge', ue.Animation)
+    hpItemRoot = base.FindComponent(self, 'LeftBottomPin/hpItemRoot', ue.Transform)
+end
+
+function DynamicWindow:ShowPlayerDodge()
+    tipsAnim:Stop()
+    tipsAnim:Play()
+end
+
+-- region Tips
+function ShowTips(tips)
+    tipsQue:Enque(tips)
+end
+
+function DynamicWindow:SetTips()
+    isTipsShowing = true
+    base.SetActice(tipsText, true)
+    tipsText.text = tipsQue:DeQue()
+    local clip = tipsAnim:GetClip('TipShowAnim')
+    base.timeSev.AddTimerTask(function (tid)
+        isTipsShowing = false
+        base.SetActice(tipsText, false)
+    end, clip.Length * 1000, 1)
+end
+-- endregion
+
+function update()
+    if tipsQue.count > 0 and not isTipsShowing then
+        SetTips()
+    end
+end
+
+return DynamicWindow

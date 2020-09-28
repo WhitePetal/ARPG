@@ -1,0 +1,25 @@
+local ts = require('Lua/Timer/LuaTimerServices')
+local ue = CS.UnityEngine
+local WindowBase = {
+    timeSev = ts
+}
+
+function WindowBase.FindComponent(compoent, path, cls)
+    return compoent.transform:Find(path):GetComponent(typeof(cls))
+end
+
+local sa_switch = {
+    [typeof(ue.Compoent)] = function (compoent, isActive)
+        compoent.gameObject:SetActive(isActive)
+    end,
+    [typeof(ue.GameObject)] = function (go, isActive)
+        go:SetActive(isActive)
+    end
+}
+function WindowBase:SetActive(isActive)
+    local func = sa_switch[self]
+    assert(func, 'SetActive 参数传入错误，请传入 GameObject 或 Component')
+    func(self, isActive)
+end
+
+return WindowBase

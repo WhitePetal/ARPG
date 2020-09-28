@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d263031b55643ad488fdccc8b329cc11, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: df113bdbe65aa74b96da24435f02ad37
+    GuidInternal: 
+    m_lastTime: -8586043789479051190
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 35e5251d329cdd4392cfd99d676d3f07
+    GuidInternal: 
+    m_lastTime: -8586043746522038248
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 12a1cbfc39b1884ca97d870e68f1c6a7
+    GuidInternal: 
+    m_lastTime: -8586036336967366645
+    List:
+    - name: Bank0
+      guid: 049531949ca69242bba1e64865a8dc8d
+      id: 3445346557
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bank0
+        ObjectType: 7
+      Path: Default Work Unit\Bank0
+    - name: MainCity
+      guid: 7acc8cddd3227c4a99e8d98b7926e015
+      id: 279612371
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MainCity
+        ObjectType: 7
+      Path: Default Work Unit\MainCity
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 779fb6654db6504fbb9838c9061fd3e8
+    GuidInternal: 
+    m_lastTime: -8586043084943410241
+    List:
+    - name: BGMEvent
+      guid: 2ff5b865cf285e45b1de4c0c83a0627d
+      id: 3806595927
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BGMEvent
+        ObjectType: 3
+      Path: Default Work Unit\BGMEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UIAuidoEvent
+      guid: 032900d99a02714da4eb0eb674d69575
+      id: 4190725699
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UIAuidoEvent
+        ObjectType: 3
+      Path: Default Work Unit\UIAuidoEvent
+      maxAttenuation: 0
+      maxDuration: 1.567347
+      minDuration: 0.182857
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 97bdaaf43d2009429490ec38c12cd938
+    GuidInternal: 
+    m_lastTime: -8586043726795517831
+    List:
+    - name: New_Game_Parameter
+      guid: 4946945439d94644a06ca1ccd38015f1
+      id: 3671138082
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New_Game_Parameter
+        ObjectType: 13
+      Path: Default Work Unit\New_Game_Parameter
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 5206ab1ed8c88a47931a0e27204e9933
+    GuidInternal: 
+    m_lastTime: -8586043789478581615
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: c9d20cf319c69946af22c4f2d8cbeeec
+    GuidInternal: 
+    m_lastTime: -8586036337208977873
+    List:
+    - name: BGMSwitch
+      guid: 6a80aeb9e82ec245a02e3bd194f370d2
+      id: 927786189
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BGMSwitch
+        ObjectType: 11
+      Path: Default Work Unit\BGMSwitch
+      values:
+      - name: Login
+        guid: 73dbf4554982fe449032ce07f39e2b7e
+        id: 73015004
+        PathAndIcons:
+        - ElementName: Login
+          ObjectType: 10
+      - name: MainCity
+        guid: 70bdab7afeadf148a08681e482219082
+        id: 279612371
+        PathAndIcons:
+        - ElementName: MainCity
+          ObjectType: 10
+      - name: Nothing
+        guid: d54a3ec8c48525468d55d51dac7d9806
+        id: 4248742144
+        PathAndIcons:
+        - ElementName: Nothing
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: UIAudioSwitch
+      guid: 851390081136e74b807a1ed437f4e661
+      id: 1198474679
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UIAudioSwitch
+        ObjectType: 11
+      Path: Default Work Unit\UIAudioSwitch
+      values:
+      - name: FBItem
+        guid: 4adb46b86a949e48bc1cb3c0c149babd
+        id: 4152428500
+        PathAndIcons:
+        - ElementName: FBItem
+          ObjectType: 10
+      - name: Nothing
+        guid: 5c016eeb5d942e4888dd31f35ed56d7e
+        id: 4248742144
+        PathAndIcons:
+        - ElementName: Nothing
+          ObjectType: 10
+      - name: uiClickBtn
+        guid: 9d80e0b763ef714b9edab8b34842e9b2
+        id: 1416673703
+        PathAndIcons:
+        - ElementName: uiClickBtn
+          ObjectType: 10
+      - name: uiExtenBtn
+        guid: cfc735a89b3fa741a99daf3490a99437
+        id: 791896191
+        PathAndIcons:
+        - ElementName: uiExtenBtn
+          ObjectType: 10
+      - name: uiLoginBtn
+        guid: 80c991dbdc961649b0d4f4f98978f55e
+        id: 1946830578
+        PathAndIcons:
+        - ElementName: uiLoginBtn
+          ObjectType: 10
+      - name: uiOpenPage
+        guid: b74928d8b32a1041be4f7fc41906d9c1
+        id: 4070012478
+        PathAndIcons:
+        - ElementName: uiOpenPage
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 041f597b1c142e4abbc71cf149e72e08
+    GuidInternal: 
+    m_lastTime: -8586043789479441118
+    List: []
+  ExpandedItems:
+  - /ARPG_WwiseProject
+  - /ARPG_WwiseProject/Events
+  - /ARPG_WwiseProject/Events/Default Work Unit
+  - /ARPG_WwiseProject/Switches
+  - /ARPG_WwiseProject/Switches/Default Work Unit
+  - /ARPG_WwiseProject/Switches/Default Work Unit/BGMSwitch
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

@@ -1,0 +1,2 @@
+local resSev = CS.ResSev.Instance
+CS.UnityEngine.Debug.Log(resSev:SerachFilterWordAndReplace('哈哈哈操你妈哈哈哈'))

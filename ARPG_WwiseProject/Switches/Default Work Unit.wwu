@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F30CD2C9-C619-4699-AF22-C4F2D8CBEEEC}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{F30CD2C9-C619-4699-AF22-C4F2D8CBEEEC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="BGMSwitch" ID="{B9AE806A-2EE8-45C2-A02E-3BD194F370D2}">
+					<ChildrenList>
+						<Switch Name="Login" ID="{55F4DB73-8249-44FE-9032-CE07F39E2B7E}"/>
+						<Switch Name="Nothing" ID="{C83E4AD5-85C4-4625-8D55-D51DAC7D9806}"/>
+						<Switch Name="MainCity" ID="{7AABBD70-ADFE-48F1-A086-81E482219082}"/>
+						<Switch Name="bgHuangYe" ID="{2786CB50-2064-4678-BBEA-6599009DD31E}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="New_Game_Parameter" ID="{54944649-D939-4446-A06C-A1CCD38015F1}"/>
+						<Curve Name="" ID="{14199E7E-AC78-4AC4-8615-6A5B16357590}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="UIAudioSwitch" ID="{08901385-3611-4BE7-807A-1ED437F4E661}">
+					<ChildrenList>
+						<Switch Name="Nothing" ID="{EB6E015C-945D-482E-88DD-31F35ED56D7E}"/>
+						<Switch Name="uiClickBtn" ID="{B7E0809D-EF63-4B71-9EDA-B8B34842E9B2}"/>
+						<Switch Name="uiLoginBtn" ID="{DB91C980-96DC-4916-B0D4-F4F98978F55E}"/>
+						<Switch Name="uiExtenBtn" ID="{A835C7CF-3F9B-41A7-A99D-AF3490A99437}"/>
+						<Switch Name="uiOpenPage" ID="{D82849B7-2AB3-4110-BE4F-7FC41906D9C1}"/>
+						<Switch Name="FBItem" ID="{B846DB4A-946A-489E-BC1C-B3C0C149BABD}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="PlayerAudioSwitch" ID="{E5F43BA5-9F5C-4975-8A38-2AC1A478B4CB}">
+					<ChildrenList>
+						<Switch Name="Nothing" ID="{AB27AF67-AC7A-4C34-A69E-95074A5CF480}"/>
+						<Switch Name="Hit" ID="{FCD1DC32-825F-4ADF-8CCB-0AE168E61E2D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

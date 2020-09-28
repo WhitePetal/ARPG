@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{65B69F77-B64D-4F50-BB98-38C9061FD3E8}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{65B69F77-B64D-4F50-BB98-38C9061FD3E8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="BGMEvent" ID="{65B8F52F-28CF-455E-B1DE-4C0C83A0627D}">
+					<ChildrenList>
+						<Action Name="" ID="{90CA8BB7-B87C-4E25-89B3-9F9F36E0B1C1}" ShortID="12931363">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BGM" ID="{1D18F951-A631-4643-913B-9CF2520980F5}" WorkUnitID="{1DC42BC4-140D-4E96-8E50-F1F991E89D7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UIAuidoEvent" ID="{D9002903-029A-4D71-A4EB-0EB674D69575}">
+					<ChildrenList>
+						<Action Name="" ID="{23A57F02-5871-4A44-97DD-E678F386623E}" ShortID="741506822">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UIAudio" ID="{359F3FB8-4413-47EE-866E-3740D7FD4DDD}" WorkUnitID="{1DC42BC4-140D-4E96-8E50-F1F991E89D7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayerEvent" ID="{C0F210A9-D65E-4015-AEF7-3A611CE2C24C}">
+					<ChildrenList>
+						<Action Name="" ID="{50689B42-557A-482A-9F3D-32DCD5DC28FB}" ShortID="771371560">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerAudio" ID="{114257D6-0443-4CE5-B4DB-5D2F683139E0}" WorkUnitID="{1DC42BC4-140D-4E96-8E50-F1F991E89D7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

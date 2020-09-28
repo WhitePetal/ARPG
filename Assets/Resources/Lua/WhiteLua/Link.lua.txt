@@ -1,0 +1,62 @@
+Link = {}
+
+function Link.new(typeStr)
+    return {
+        linkType = typeStr,
+        count = 0,
+        head = {
+            val = nil,
+            next = nil
+        },
+        final = {
+            val = nil,
+            next = nil
+        }
+    }
+end
+
+function Link:Add(value)
+    if type(value) ~= self.linkType then
+        error("添加类型不符合该链表类型")
+        return
+    end
+
+    if not self.head.val then
+        self.head.val = value
+        self.final = self.head
+    else
+        local node = {
+            val = value,
+            next = nil
+        }
+        self.final.next = node
+        self.final = node
+    end
+    self.count = self.count + 1
+end
+
+function Link:Remove(index)
+    if self.count <= 0 then
+        error("链表已为空，无法删除元素")
+        return
+    end
+
+    if index <= 0 or index > self.count then
+        error("输入参数不合法，无法删除元素")
+        return
+    end
+
+    local forward = self.head
+    local cur = self.head
+    local next = self.head.next
+    for i = 1, index - 1, 1 do
+        forward = cur
+        cur = forward.next
+        next = cur.next
+    end
+    cur = nil
+    forward.next = next
+end
+
+
+return Link

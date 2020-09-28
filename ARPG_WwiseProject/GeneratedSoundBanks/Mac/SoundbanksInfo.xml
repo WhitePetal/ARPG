@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>F:\Unity\ARPG\ARPG_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\Unity\ARPG\ARPG_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Unity\ARPG\ARPG_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\Unity\ARPG\ARPG_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="279612371" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainCity</ObjectPath>
+			<ShortName>MainCity</ShortName>
+			<Path>MainCity.bnk</Path>
+			<IncludedMemoryFiles>
+				<File Id="534778113" Language="SFX">
+					<ShortName>fbitem.wav</ShortName>
+					<Path>SFX\fbitem_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2471350665" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\FuBen</ObjectPath>
+			<ShortName>FuBen</ShortName>
+			<Path>FuBen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2680172942" Name="PlayerEvent" ObjectPath="\Events\Default Work Unit\PlayerEvent" DurationType="OneShot" DurationMin="1.044898" DurationMax="1.044898"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="376997784" Language="SFX">
+					<ShortName>assassin_Hit.wav</ShortName>
+					<Path>SFX\assassin_Hit_10C4C929.wem</Path>
+				</File>
+				<File Id="744366711" Language="SFX">
+					<ShortName>bgHuangYe.wav</ShortName>
+					<Path>SFX\bgHuangYe_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<SwitchGroups>
+				<SwitchGroup Id="186799644" Name="PlayerAudioSwitch" ObjectPath="\Switches\Default Work Unit\PlayerAudioSwitch">
+					<Switches>
+						<Switch Id="4248742144" Name="Nothing" ObjectPath="\Switches\Default Work Unit\PlayerAudioSwitch\Nothing"/>
+						<Switch Id="1116398592" Name="Hit" ObjectPath="\Switches\Default Work Unit\PlayerAudioSwitch\Hit"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="3445346557" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bank0</ObjectPath>
+			<ShortName>Bank0</ShortName>
+			<Path>Bank0.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3806595927" Name="BGMEvent" ObjectPath="\Events\Default Work Unit\BGMEvent" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="752351914" Language="SFX">
+							<ShortName>LoginBG.wav</ShortName>
+							<Path>SFX\LoginBG_D79FB2B7.wem</Path>
+						</File>
+						<File Id="959247447" Language="SFX">
+							<ShortName>bgMainCity.wav</ShortName>
+							<Path>SFX\bgMainCity_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ExcludedMemoryFiles>
+						<File Id="744366711" Language="SFX">
+							<ShortName>bgHuangYe.wav</ShortName>
+							<Path>SFX\bgHuangYe_D79FB2B7.wem</Path>
+						</File>
+					</ExcludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{55F4DB73-8249-44FE-9032-CE07F39E2B7E}">
+							<Media>
+								<File Id="752351914"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7AABBD70-ADFE-48F1-A086-81E482219082}">
+							<Media>
+								<File Id="959247447"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2786CB50-2064-4678-BBEA-6599009DD31E}">
+							<Media>
+								<File Id="744366711"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4190725699" Name="UIAuidoEvent" ObjectPath="\Events\Default Work Unit\UIAuidoEvent" DurationType="OneShot" DurationMin="0.182857" DurationMax="1.567347">
+					<IncludedMemoryFiles>
+						<File Id="160613602" Language="SFX">
+							<ShortName>uiOpenPage.wav</ShortName>
+							<Path>SFX\uiOpenPage_10C4C929.wem</Path>
+						</File>
+						<File Id="464505325" Language="SFX">
+							<ShortName>uiClickBtn.wav</ShortName>
+							<Path>SFX\uiClickBtn_10C4C929.wem</Path>
+						</File>
+						<File Id="769570554" Language="SFX">
+							<ShortName>uiExtenBtn.wav</ShortName>
+							<Path>SFX\uiExtenBtn_10C4C929.wem</Path>
+						</File>
+						<File Id="820098363" Language="SFX">
+							<ShortName>uiLoginBtn.wav</ShortName>
+							<Path>SFX\uiLoginBtn_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{B7E0809D-EF63-4B71-9EDA-B8B34842E9B2}">
+							<Media>
+								<File Id="464505325"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{DB91C980-96DC-4916-B0D4-F4F98978F55E}">
+							<Media>
+								<File Id="820098363"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A835C7CF-3F9B-41A7-A99D-AF3490A99437}">
+							<Media>
+								<File Id="769570554"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D82849B7-2AB3-4110-BE4F-7FC41906D9C1}">
+							<Media>
+								<File Id="160613602"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B846DB4A-946A-489E-BC1C-B3C0C149BABD}">
+							<Media>
+								<File Id="534778113"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="927786189" Name="BGMSwitch" ObjectPath="\Switches\Default Work Unit\BGMSwitch">
+					<Switches>
+						<Switch Id="73015004" Name="Login" ObjectPath="\Switches\Default Work Unit\BGMSwitch\Login"/>
+						<Switch Id="4248742144" Name="Nothing" ObjectPath="\Switches\Default Work Unit\BGMSwitch\Nothing"/>
+						<Switch Id="279612371" Name="MainCity" ObjectPath="\Switches\Default Work Unit\BGMSwitch\MainCity"/>
+						<Switch Id="2330559301" Name="bgHuangYe" ObjectPath="\Switches\Default Work Unit\BGMSwitch\bgHuangYe"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1198474679" Name="UIAudioSwitch" ObjectPath="\Switches\Default Work Unit\UIAudioSwitch">
+					<Switches>
+						<Switch Id="4248742144" Name="Nothing" ObjectPath="\Switches\Default Work Unit\UIAudioSwitch\Nothing"/>
+						<Switch Id="1416673703" Name="uiClickBtn" ObjectPath="\Switches\Default Work Unit\UIAudioSwitch\uiClickBtn"/>
+						<Switch Id="1946830578" Name="uiLoginBtn" ObjectPath="\Switches\Default Work Unit\UIAudioSwitch\uiLoginBtn"/>
+						<Switch Id="791896191" Name="uiExtenBtn" ObjectPath="\Switches\Default Work Unit\UIAudioSwitch\uiExtenBtn"/>
+						<Switch Id="4070012478" Name="uiOpenPage" ObjectPath="\Switches\Default Work Unit\UIAudioSwitch\uiOpenPage"/>
+						<Switch Id="4152428500" Name="FBItem" ObjectPath="\Switches\Default Work Unit\UIAudioSwitch\FBItem"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

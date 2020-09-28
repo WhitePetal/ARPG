@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2680172942	PlayerEvent			\Default Work Unit\PlayerEvent	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	186799644	PlayerAudioSwitch			\Default Work Unit\PlayerAudioSwitch	
+	927786189	BGMSwitch			\Default Work Unit\BGMSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	1116398592	Hit	PlayerAudioSwitch			
+	4248742144	Nothing	PlayerAudioSwitch			
+	73015004	Login	BGMSwitch			
+	279612371	MainCity	BGMSwitch			
+	2330559301	bgHuangYe	BGMSwitch			
+	4248742144	Nothing	BGMSwitch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	376997784	assassin_Hit	F:\Unity\ARPG\ARPG_WwiseProject\.cache\Windows\SFX\assassin_Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerAudio\assassin_Hit		46144
+	744366711	bgHuangYe	F:\Unity\ARPG\ARPG_WwiseProject\.cache\Windows\SFX\bgHuangYe_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\BGM\bgHuangYe		3338560
+
