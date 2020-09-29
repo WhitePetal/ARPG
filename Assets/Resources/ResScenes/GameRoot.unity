@@ -336,7 +336,6 @@ GameObject:
   m_Component:
   - component: {fileID: 721892076}
   - component: {fileID: 721892079}
-  - component: {fileID: 721892077}
   m_Layer: 0
   m_Name: GameRoot
   m_TagString: Untagged
@@ -363,21 +362,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &721892077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721892075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d92f1772804edb4d8ae0a1c0a638abc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  luaScript: {fileID: 4900000, guid: 6aee9f0e319f2e540889b377d184a6c5, type: 3}
-  luaScriptPath: 
-  injections: []
 --- !u!114 &721892079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +369,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721892075}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3914a5395203db499309c0ee45800e0, type: 3}
   m_Name: 

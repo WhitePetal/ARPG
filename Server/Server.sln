@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1169
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{276C72A0-70B2-4E27-81E5-8DCF7F3FC918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Protocol", "Protocol\Protocol.csproj", "{1FB1FED3-6598-4DD0-B7AA-20FC717D2D8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{276C72A0-70B2-4E27-81E5-8DCF7F3FC918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276C72A0-70B2-4E27-81E5-8DCF7F3FC918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276C72A0-70B2-4E27-81E5-8DCF7F3FC918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276C72A0-70B2-4E27-81E5-8DCF7F3FC918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB1FED3-6598-4DD0-B7AA-20FC717D2D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB1FED3-6598-4DD0-B7AA-20FC717D2D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB1FED3-6598-4DD0-B7AA-20FC717D2D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB1FED3-6598-4DD0-B7AA-20FC717D2D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA4CC3E9-265C-4A1D-A4E4-1A9A6C73CE04}
+	EndGlobalSection
+EndGlobal
