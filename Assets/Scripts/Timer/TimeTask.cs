@@ -23,8 +23,9 @@ namespace BJTimer
     public struct FrameTask
     {
         public int id;
+        public int curFrame;
         public int delay;
-        public int destFrame;
+        //public int destFrame;
         public Action<int> callBack;
         public int count;
     }

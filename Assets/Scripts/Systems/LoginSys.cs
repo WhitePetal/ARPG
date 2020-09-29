@@ -28,10 +28,6 @@ public class LoginSys : SystemBase<LoginSys>
     /// </summary>
     public void EnterLogin()
     {
-        // TODO
-        // 异步加载登录场景
-        // 并显示加载的进度
-        // 加载完成后再打开注册/登录界面
         resSev.AsyncLoadScene(Constans.SceneLogin, OpenLoginWindow);
     }
 
